@@ -8,6 +8,7 @@
 # F18 Fighter Simulation(ammojs)
 
 实现了一个基于babylonjs+ammojs的战斗机飞控系统，飞控部分全部基于ammojs物理引擎实现：
+#### [Play Now]:https://renjianfeng.github.io/F18FlightSimulator-ammojs/dist/index.html
 ## 主要功能列举： ##
 1. 尾翼、襟翼、升降舵、方向舵、起落架：（基于babylonjs骨骼控制和ammojs载具类的相关方法实现，如悬架高度、轮胎位置信息、旋转信息等，babylonjs骨骼ik、fk控制）
 2. HUD抬头显示器(babylonjs gui实现、世界坐标转换、gui AdvancedDynamicTexture、gui xmlloader)
