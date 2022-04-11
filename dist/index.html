@@ -1,0 +1,133 @@
+<!--
+ * @Author: renjianfeng
+ * @Date: 2022-03-28 10:32:07
+ * @LastEditTime: 2022-04-11 17:34:43
+ * @LastEditors: renjianfeng
+ * @FilePath: /fly/src/index.ejs
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Dependencies -->
+    <script src="//cdn.xidayun.com/ammo.js"></script>
+    <script src="//cdn.xidayun.com/pep.js"></script>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>F18 Playerground</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+
+        #flyList {
+            border: 1px solid #fff;
+            padding: 10px;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        #flyList button {
+            background: transparent;
+            border: 1px solid rgb(7, 192, 161);
+            color: #fff;
+            margin-left: 5px;
+            padding: 3px;
+            border-radius: 3px;
+        }
+
+        .input_panel {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .play_button {
+            background: transparent;
+            border: 2px solid rgb(7, 192, 161);
+            color: #fff;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 20%;
+            margin: auto;
+            width: 200px;
+            height: 50px;
+            font-size: 28px;
+            border-radius: 14px;
+        }
+
+        #showFps {
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            font-size: 22px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .flight_manual_panel {
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgb(80, 80, 80);
+            margin: 10px;
+            float: right;
+            padding: 10px;
+            width: 60%;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .tips_image{
+            width: 100%;
+            opacity: 0.5;
+            /* position: fixed;
+            right: 0;
+            bottom: 0 */
+        }
+    </style>
+
+<script defer src="main.bundle.js"></script></head>
+
+<body>
+    <script>
+        window.assetsUrl = ""
+    </script>
+    <canvas id="renderCanvas"></canvas>
+    <div id="showFps"></div>
+    <div class="input_panel" id="input_panel">
+        <div id="flyList"></div>
+        <button class="play_button" id="play_button">Continue</button>
+        <div class="flight_manual_panel">
+            <h3>飞行手册(Flight Manual)</h3>
+            <div>
+                <img class="tips_image" src="./assets/image/tu.png" />
+            </div>
+            <div id="gamepadState"">手柄状态(Gamepad State):off</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
