@@ -2,12 +2,14 @@
  * @Author: renjianfeng
  * @Date: 2021-02-27 22:59:10
  * @LastEditors: renjianfeng
- * @LastEditTime: 2022-04-11 13:51:29
+ * @LastEditTime: 2022-04-11 17:51:56
  * @FilePath: /fly/README.md
 -->
-本开源文档实现了一个基于babylonjs+ammojs的战斗机飞控系统，飞控部分全部基于ammojs物理引擎实现：
+# F18 Fighter Simulation(ammojs)
+
+实现了一个基于babylonjs+ammojs的战斗机飞控系统，飞控部分全部基于ammojs物理引擎实现：
 ## 主要功能列举： ##
-1. 尾翼、襟翼、升降舵、方向舵、起落架：（基于babylonjs骨骼控制和ammojs载具类的相关方法实现，2如悬架高度、轮胎位置信息、选中信息等，babylonjs骨骼ik、fk控制）
+1. 尾翼、襟翼、升降舵、方向舵、起落架：（基于babylonjs骨骼控制和ammojs载具类的相关方法实现，如悬架高度、轮胎位置信息、旋转信息等，babylonjs骨骼ik、fk控制）
 2. HUD抬头显示器(babylonjs gui实现、世界坐标转换、gui AdvancedDynamicTexture、gui xmlloader)
 3. 飞机的偏航、翻滚、俯仰的矢量控制。（基于ammojs的作用力控制、阻力、升力、角动量的物理控制，实现飞控主要操控）
 4. 机体物理细节（爆炸解体物理实现、机体ammojs复合体的应用）
@@ -15,6 +17,15 @@
 7. 地图获取（地图获取来自：http://fastmap.xidayun.com/）
 8. 输入控制（支持键盘、手柄控制，其中xbox、ps4手柄支持震动反馈）
 9. 空间音效(支持3D空间音效，并对不同视角的音效做了衰减处理，如舱内和舱外的衰减)
+10. 拖尾效果（飞机在爬升过程中会产生尾流效果）
+
+## 截图 ##
+![Alt text](/screenshot/image1.png)
+![Alt text](/screenshot/image2.png)
+![Alt text](/screenshot/image3.png)
+![Alt text](/screenshot/image4.png)
+![Alt text](/screenshot/image5.png)
+![Alt text](/screenshot/image6.png)
 ## 如何快速预览项目? ##
 
 1. 下载并安装 Node.js
@@ -59,9 +70,9 @@ F18InputController.ins.init(this.scene)
 //手柄控制器
 F18GamepadController.ins.init(this.scene)
 
-//视图目标飞机
+//当前视图目标飞机
 F18CameraController.ins.tergetVehicle(this.fly)
-//控制目标飞机
+//当前控制目标飞机
 F18InputController.ins.tergetVehicle(this.fly)
 
 
@@ -69,7 +80,7 @@ F18InputController.ins.tergetVehicle(this.fly)
 this.fly.dispose()
 
 //使飞机爆炸
-this.fly.dispose()
+this.fly.explode()
 ```
 ## 目录结构说明 ##
 ```
@@ -113,4 +124,5 @@ fly
 ```
 
 ## 参考资料 ##
-待整理
+1. https://doc.babylonjs.com/
+2. https://gamepad-tester.com/
