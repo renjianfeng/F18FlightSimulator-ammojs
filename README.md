@@ -2,10 +2,12 @@
  * @Author: renjianfeng
  * @Date: 2021-02-27 22:59:10
  * @LastEditors: renjianfeng
- * @LastEditTime: 2022-04-11 17:51:56
+ * @LastEditTime: 2022-04-11 20:34:05
  * @FilePath: /fly/README.md
 -->
 # F18 Fighter Simulation(ammojs)
+
+[English Document](/README.en.md)
 
 实现了一个基于babylonjs+ammojs的战斗机飞控系统，飞控部分全部基于ammojs物理引擎实现：
 #### [Play Now]:https://renjianfeng.github.io/F18FlightSimulator-ammojs/dist/index.html
@@ -15,7 +17,7 @@
 3. 飞机的偏航、翻滚、俯仰的矢量控制。（基于ammojs的作用力控制、阻力、升力、角动量的物理控制，实现飞控主要操控）
 4. 机体物理细节（爆炸解体物理实现、机体ammojs复合体的应用）
 6. 性能优化(机体LOD策略实现、资源回收、dispose方法的封装实现)
-7. 地图获取（地图获取来自：http://fastmap.xidayun.com/）
+7. 地图获取（地图来自：http://fastmap.xidayun.com/）
 8. 输入控制（支持键盘、手柄控制，其中xbox、ps4手柄支持震动反馈）
 9. 空间音效(支持3D空间音效，并对不同视角的音效做了衰减处理，如舱内和舱外的衰减)
 10. 拖尾效果（飞机在爬升过程中会产生尾流效果）
@@ -120,7 +122,7 @@ fly
 |  |   ├─image
 |  |   ├─gui
 ├─map(地图blender源文件)
-├─f18(F18 blender绑定谷歌源文件)
+├─f18(F18 blender绑定骨骼源文件)
 ├─dist(打包文件夹)
 ```
 
