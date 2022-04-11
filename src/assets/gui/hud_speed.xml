@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root>
+    <Rectangle  name="hud_speed" thickness="0" verticalAlignment="Control.HORIZONTAL_ALIGNMENT_TOP" horizontalAlignment="Control.HORIZONTAL_ALIGNMENT_LEFT" >
+        <Image  name="bgleft" thickness="0" verticalAlignment="Control.HORIZONTAL_ALIGNMENT_TOP" horizontalAlignment="Control.HORIZONTAL_ALIGNMENT_LEFT" width="162px" height="61px" left="43px" top="66px" source="{{guiSources.a1d9c6b6-f9b5-4189-a45a-bcfc2dd28d08}}" >
+        </Image>
+        <Image  name="bgright" thickness="0" verticalAlignment="Control.HORIZONTAL_ALIGNMENT_TOP" horizontalAlignment="Control.HORIZONTAL_ALIGNMENT_LEFT" width="162px" height="61px" left="868px" top="66px" source="{{guiSources.ff60ccea-6e82-43db-b18b-3d4a7c543dc2}}" >
+        </Image>
+        <TextBlock  name="textleft" id="flySpeed" thickness="0" textHorizontalAlignment="Control.HORIZONTAL_ALIGNMENT_CENTER" verticalAlignment="Control.HORIZONTAL_ALIGNMENT_TOP" horizontalAlignment="Control.HORIZONTAL_ALIGNMENT_LEFT" width="120px" height="29px" left="39px" top="82px" fontSize="36" color="rgba(90, 199, 94, 1)" text="_1600" >
+        </TextBlock>
+         <TextBlock  name="textleft" id="undercarriageState" thickness="0" textHorizontalAlignment="Control.HORIZONTAL_ALIGNMENT_LEFT" verticalAlignment="Control.HORIZONTAL_ALIGNMENT_TOP" horizontalAlignment="Control.HORIZONTAL_ALIGNMENT_LEFT" width="220px" height="29px" left="39px" top="142px" fontSize="36" color="rgba(90, 199, 94, 1)" text="起落架:打开" >
+        </TextBlock>
+        <TextBlock  name="textright" id="throttleSize" thickness="0" textHorizontalAlignment="Control.HORIZONTAL_ALIGNMENT_CENTER" verticalAlignment="Control.HORIZONTAL_ALIGNMENT_TOP" horizontalAlignment="Control.HORIZONTAL_ALIGNMENT_LEFT" width="120px" height="29px" left="896px" top="82px" fontSize="36" color="rgba(90, 199, 94, 1)" text="_1600" >
+        </TextBlock>
+        <TextBlock  name="titleright" thickness="0" verticalAlignment="Control.HORIZONTAL_ALIGNMENT_TOP" horizontalAlignment="Control.HORIZONTAL_ALIGNMENT_LEFT" width="68px" height="34px" left="948px" top="26px" fontSize="36" color="rgba(90, 199, 94, 1)" text="推力" >
+        </TextBlock>
+        <TextBlock  name="titleleft" thickness="0" verticalAlignment="Control.HORIZONTAL_ALIGNMENT_TOP" horizontalAlignment="Control.HORIZONTAL_ALIGNMENT_LEFT" width="71px" height="35px" left="47px" top="23px" fontSize="36" color="rgba(90, 199, 94, 1)" text="速度" >
+        </TextBlock>
+    </Rectangle>
+</root>
